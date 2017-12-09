@@ -1,0 +1,178 @@
+html{
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@font-face{
+  font-family: avenir;
+  src: url('../../fonts/Avenir LT 65 Medium.ttf')
+}
+body{
+   font-family: avenir;
+   background: #f8f8f8;
+   /* background: linear-gradient(#ccc,transparent 50%); */
+}
+.row,.zero{
+  margin: 0px; padding: 0px;
+}
+.header a.navbar-brand{
+  text-transform: uppercase;
+  color: #eee;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 30px;
+
+}
+.header a.get-started{
+  background: #f15b2a;
+  padding: 6px 20px;
+  margin: 23px 0px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: #eee;
+}
+.header ul li a{
+  padding: 30px;
+  font-size: 1.1em;
+  font-family: avenir;
+  font-weight: 500;
+}
+.landing-page{
+  background: linear-gradient(to right, #000, transparent 300%),url("../images/group.jpg");
+  background-size: cover;
+  padding: 0px 0px 169px 20px;
+  height: 580px;
+}
+.landing-page .x-content {
+  font-size: 1.2em;
+  padding: 30px 0px;
+  color: #ccc;
+}
+.landing-page .text-lg{
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 10% 0% 1%;
+  color: #fff
+}
+.landing-page .start{
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border:none;
+  color: #fff;
+  background: #f15b2a;
+}
+
+.footer{
+  background:rgba(0, 0, 0,0.88);
+  padding: 3% 10px
+}
+.footer .text-lg{
+  font-size: 3.5em;
+  color: #eee;
+}
+.footer .text-area a.btn{
+  background: #f05a28;
+  border: 0px;
+  color: #eee;
+  padding: 10px 20px;
+}
+
+.login-modal,.signup-modal{
+  position: absolute;
+  right: 0;
+}
+.login-modal .box,.signup-modal .box{
+  background: rgba(41, 41, 41, 0.88);
+  width: 300px;
+  float: right;
+  padding: 0px 10px 10px;
+  height: 580px;
+}
+.zero{
+  margin:0px;padding: 0px;
+}
+.login-modal input,.signup-modal input{
+  border-radius: 0px;
+  background: transparent;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.login-modal input:focus,.signup-modal  input:focus{
+  box-shadow: none;
+}
+.modal-header{
+  font-size: 1.5em;
+  text-align: center; 
+  border-bottom: 1px solid #ccc;
+}
+
+.rounded{
+  border-radius: 100%;
+}
+
+.course-img::after{
+  content: "";
+  border-width: 15px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  position: absolute;
+  right: 0px;
+  top: 145px;
+}
+
+.next-course .course-info{
+  padding: 30px 0px
+}
+.next-course .course-title{
+  font-size: 2em;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: bold;
+  padding: 20px 0px 0px;
+}
+.next-course .course-desc{
+  font-size: 1.2em;
+}
+
+.btn-custom{
+  background: #f05a28;
+  border-radius: 40px;
+  border: 0px;
+  padding: 10px 30px;
+  font-size: 0.9em;
+  -webkit-transition: 0.3s ease-in ;
+  -moz-transition: 0.3s ease-in ;
+  transition: 0.3s ease-in ;
+}
+
+.next-course .course-extra{
+  padding: 30px 0px 10px;
+  bottom: 0px;
+}
+.grid-course{
+  background: #fff;
+  /* margin-top: 50px; */
+  padding: 30px 0px;
+  border-top: 2px solid #eee  ;
+}
+
+.grid-course .course-info{
+  padding: 10px 0px;
+}
+.grid-course .course-title{
+    font-size: 1.3em;
+}
+.grid-course .course-desc{
+  font-size: 1em;
+}
+.grid-course .btn-custom{
+  background: #f05a28;
+  border-radius: 40px;
+  border: 0px;
+  padding: 5px 15px;
+  font-size: 0.8em;
+}
