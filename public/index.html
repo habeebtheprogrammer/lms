@@ -18,11 +18,27 @@
 
   <script src="../../js/jquery.min.js"></script>
 </head>
-
 <body>
   <div id="root"></div>
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/custom.js"></script>
+    <script>
+       
+        $(window).scroll(function(){
+         var scrollTop = $(window).scrollTop();
+          if(scrollTop >270){
+            $('.fixed-bar').addClass('slideInDown');
+            $('.fixed-bar').addClass('animated');
+            $('.fixed-bar').addClass('navbar-fixed-top');
+            // $('.bar3 ul li span').addClass('navborder');
+            
+          }
+          else{
+            $('.fixed-bar').removeClass('slideInDown');
+             $('.fixed-bar').removeClass('navbar-fixed-top')
+          }
+        });
+    </script>
 </body>
 
 </html>

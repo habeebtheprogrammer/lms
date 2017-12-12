@@ -9,19 +9,19 @@ html{
 }
 body{
    font-family: avenir;
-   background: #f8f8f8;
+   background: #fff;
    /* background: linear-gradient(#ccc,transparent 50%); */
 }
 .row,.zero{
   margin: 0px; padding: 0px;
 }
 .header a.navbar-brand{
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #eee;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: bold;
-  letter-spacing: 2px;
-  padding: 30px;
+  /* letter-spacing: 2px; */
+  padding: 28px;
 
 }
 .header a.get-started{
@@ -42,7 +42,7 @@ body{
   font-weight: 500;
 }
 .landing-page{
-  background: linear-gradient(to right, #000, transparent 300%),url("../images/group.jpg");
+  background: linear-gradient(to right, #000, transparent 200%),url("../images/Embroidered Logo_by_OscarChavezEspinosa.jpg");
   background-size: cover;
   padding: 0px 0px 169px 20px;
   height: 580px;
@@ -84,13 +84,15 @@ body{
 .login-modal,.signup-modal{
   position: absolute;
   right: 0;
+  z-index: 1001;
+  position: fixed;
+  bottom: 0px;
 }
 .login-modal .box,.signup-modal .box{
-  background: rgba(41, 41, 41, 0.88);
+  background: rgba(29, 28, 28, 0.9);
   width: 300px;
   float: right;
-  padding: 0px 10px 10px;
-  height: 580px;
+  padding: 10px 10px 30px;
 }
 .zero{
   margin:0px;padding: 0px;
@@ -99,17 +101,21 @@ body{
   border-radius: 0px;
   background: transparent;
   border: 0px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #bbb;
+  color: #eee;
 }
-.login-modal input:focus,.signup-modal  input:focus{
+.login-modal input:focus,.signup-modal  input:focus,.has-error .form-control:focus{
   box-shadow: none;
 }
 .modal-header{
   font-size: 1.5em;
   text-align: center; 
-  border-bottom: 1px solid #ccc;
+  color: #eee;
+  border-bottom: 1px solid #aaa;
 }
-
+.login-modal .form-group p{
+  color: #aaa;
+}
 .rounded{
   border-radius: 100%;
 }
@@ -131,11 +137,22 @@ body{
   font-size: 2em;
   text-transform: capitalize;
   color: #000;
-  font-weight: bold;
+  font-weight: normal;
   padding: 20px 0px 0px;
 }
 .next-course .course-desc{
   font-size: 1.2em;
+}
+
+.mycourse .course-title{
+    font-size: 2em;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: normal;
+  padding: 0px;
+}
+.mycourse .course-info{
+  padding: 0px;
 }
 
 .btn-custom{
@@ -156,10 +173,12 @@ body{
 .grid-course{
   background: #fff;
   /* margin-top: 50px; */
-  padding: 30px 0px;
-  border-top: 2px solid #eee  ;
+  padding: 0px 0px 30px;
+  /* border-top: 2px solid #eee  ; */
 }
-
+.grid-course .box{
+  padding: 20px 0px 10px;
+}
 .grid-course .course-info{
   padding: 10px 0px;
 }
@@ -176,3 +195,58 @@ body{
   padding: 5px 15px;
   font-size: 0.8em;
 }
+
+.sidebar .box2{
+  border-top: 1px solid #ddd;
+  padding: 20px 0px 15px;
+}
+.grid-course .prep {
+ text-align: center;
+}
+.grid-course .prep .zero{
+padding: 20px 0px;
+border-bottom: 2px solid #ddd;
+}
+.grid-course .prep a{
+color: #000;
+text-transform: uppercase;
+  text-decoration: none;
+
+}
+.form-group.has-error   p {
+  color: rgb(150, 43, 43);
+  font-size: 0.9em;
+  
+}
+
+
+.dashboard-box{
+  text-align: center;
+  padding: 30px 0px;
+  margin: 10px 0px;
+  background: #333;
+  color: #fff;
+  font-weight: bold
+}
+.expenses p{
+  font-weight: bold
+}
+.publication input, .publication textarea{
+  border:0px;
+  border-bottom: 1px solid #555;
+  box-shadow: none;
+}
+.publication input:focus,.publication textarea:focus{
+  box-shadow: none;
+  border-bottom: 1px solid #f05a28;
+  -webkit-transition: 0.2s  ease-in ;
+  -moz-transition: 0.2s ease-in ;
+  transition: 0.2s  ease-in;
+}
+
+.profile-img{
+  padding: 0px;
+  margin-top: -60px;
+  border: 4px solid #fff
+}
+
